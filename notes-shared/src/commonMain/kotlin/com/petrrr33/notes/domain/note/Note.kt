@@ -4,7 +4,7 @@ import com.petrrr33.notes.presentation.*
 import kotlinx.datetime.LocalDateTime
 
 data class Note(
-    val id: Long,
+    val id: Long?,
     val title: String,
     val content: String,
     val colorHex: Long,

@@ -20,7 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun SearchTextField(
+fun HideableSearchTextField(
     text: String,
     isSearchActive: Boolean,
     onTextChange: (String) -> Unit,
@@ -38,13 +38,11 @@ fun SearchTextField(
                 value = text,
                 onValueChange = onTextChange,
                 shape = RoundedCornerShape(50.dp),
-                placeholder = { Text(text = text)},
+                placeholder = { Text(text = text) },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp)
                     .padding(end = 40.dp)
-                    .
-            )
             )
         }
 
@@ -71,8 +69,6 @@ fun SearchTextField(
             IconButton(onClick = onCloseClick) {
                 Icon(imageVector = Icons.Default.Close, contentDescription = "Close Search")
             }
-
-            )
         }
     }
 }
